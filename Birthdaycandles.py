@@ -23,18 +23,18 @@ import sys
 def birthdayCakeCandles(ar):
     j=0
     for i in range (len(ar)):
-        if ar[i]>ar[i+1]:
+        if ar[i]>ar[i-1]:
             big=ar[i]
-        if big in ar:
+    for k in ar:
+        if k==big:
             j+=1
     return j
-            
         
             
         
 
 if __name__ == '__main__':
-    fptr = open(os.environ['OUTPUT_PATH'], 'w')
+    
 
     ar_count = int(input())
 
@@ -43,8 +43,6 @@ if __name__ == '__main__':
 
     result = birthdayCakeCandles(ar)
 
-    fptr.write(str(result) + '\n')
-
-    fptr.close()
+    print(result)
 
 
