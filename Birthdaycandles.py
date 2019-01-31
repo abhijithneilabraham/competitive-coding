@@ -22,11 +22,9 @@ import sys
 # Complete the birthdayCakeCandles function below.
 def birthdayCakeCandles(ar):
     j=0
-    for i in range (len(ar)):
-        if ar[i]>ar[i-1]:
-            big=ar[i]
-    for k in ar:
-        if k==big:
+    
+    for k in range(len(ar)):
+        if max(ar) ==ar[k]:
             j+=1
     return j
         
