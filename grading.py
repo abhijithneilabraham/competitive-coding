@@ -17,7 +17,9 @@ def gradingStudents(grades):
     result=[]
     for i in range(len(grades)):
         if grades[i]<=100 and grades[i]>=0:
-            if grades[i]%5>=3:
+            if grades[i]<38:
+                result.append(grades[i])
+            elif grades[i]%5>=3:
                 result.append((int(grades[i]/5)+1)*5)
             else:
                 result.append(int(grades[i]))
