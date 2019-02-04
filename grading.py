@@ -18,12 +18,11 @@ def gradingStudents(grades):
     for i in range(len(grades)):
         if grades[i]<=100 and grades[i]>=0:
             if grades[i]%5>=3:
-                result.append((grades[i]/5)+5)
+                result.append((int(grades[i]/5)+1)*5)
             else:
-                result.append(grades[i]/5)
+                result.append(int(grades[i]))
     
-    for j in range(len(result)):
-        return result[j]
+    return result
     #
     # Write your code here.
     #
