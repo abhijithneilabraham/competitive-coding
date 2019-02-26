@@ -24,14 +24,15 @@ def countApplesAndOranges(s, t, a, b, apples, oranges):
     for j in range(len(oranges)):
         if b+oranges[j]>=s and b+oranges[j]<=t:
             d+=1
-    return c,d
+    print(c)
+    print(d)
             
             
             
     
 
 if __name__ == '__main__':
-    print('enter")
+    print('enter')
     st = input().split()
 
     s = int(st[0])
