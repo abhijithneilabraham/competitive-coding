@@ -26,8 +26,7 @@ def breakingRecords(scores):
             b.append(scores[i])
         if scores[i]<=min(a) and scores[i] not in c:
             c.append(scores[i])
-    print(len(b)-1)
-    print(len(c)-1)
+    return len(b)-1,len(c-1)
 
         
 scores=[8,20,20,4,2,6,7]        
