@@ -14,10 +14,11 @@ def climbingLeaderboard(scores, alice):
     rank=len(scores)
     count=0
     for i in range(len(alice)):
-        for j in (len(scores)-1,0):
-            if alice[i]>scores[j]:
-                rank=len(scores)-1-j
-                break
+        for j in range(len(scores)-1,0,-1):
+            if scores[j]<alice[i]:
+                rank=j+1
+        if alice[i]>=scores[len(scores)-1]:
+            rank=1
         print(rank)
 climbingLeaderboard(scores,alice)
 
