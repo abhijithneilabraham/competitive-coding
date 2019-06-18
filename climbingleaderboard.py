@@ -10,17 +10,14 @@ scores=[100, 90, 85, 80, 75, 60]
 alice=[0, 65, 77, 90, 102]
 
 def climbingLeaderboard(scores, alice):
-    scores=sorted(scores)
+    scores=sorted(list(set(scores)))
     rank=[]
-    count=0
-    for i in alice:
-        for j in range(len(scores)) :
-            if i>=scores[j]:
-                rank.append(len(scores)-j)
-                
-    
+    for i in range(len(alice)):
+        j=0 
+        while len(scores) >j and alice[i]>=scores[j]:
+                j+=1
+                rank.append(len(scores)+1-j)
         
-                
     print(rank)
 climbingLeaderboard(scores,alice)
 
