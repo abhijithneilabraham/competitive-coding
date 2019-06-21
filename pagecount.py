@@ -8,25 +8,21 @@ Created on Fri Jun 21 22:46:30 2019
 
 def pageCount(n, p):
     count=0
-    if n%2==0 and n<p:
+   
+    if n==p or abs(n-p)==1 :
+        return count
+    else:
+        count=abs(n-p)//2
+        return count-1
+            
+          
+               
+               
+  
     
-        for i in range(n,p,2):
-            count+=1
-    elif n%2==0 and n>p:
-        for i in range(p,n,2):
-            count+=1
-    elif n%2!=0 and n<p:
-        n-=1
-        for i in range(n,p,2):
-            count+=1
-    elif n%2!=0 and n>p:
-        n=n-1
-        for i in range(p,n,2):
-            count=count+1
-    elif n==p:
-        count =0
+    print(count-1)
     return count-1
-    
+        
 n=int(input())
 p=int(input())
 print(pageCount(n,p))
