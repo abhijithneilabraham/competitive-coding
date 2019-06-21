@@ -7,21 +7,15 @@ Created on Fri Jun 21 22:46:30 2019
 """
 
 def pageCount(n, p):
-    count=0
-   
-    if n==p or abs(n-p)==1 :
-        return count
+    if int(n) in range(1,100001): 
+        if n%2==0 and p>=5:
+            arr=[abs(p-n)+1,p]
+            return abs(min(arr))//2
+        else:
+            arr=[abs(p-n),p,n]
+            return abs(min(arr))//2
     else:
-        count=abs(n-p)//2
-        return count-1
-            
-          
-               
-               
-  
-    
-    print(count-1)
-    return count-1
+        return False
         
 n=int(input())
 p=int(input())
