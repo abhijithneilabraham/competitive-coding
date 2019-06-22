@@ -7,13 +7,12 @@ Created on Sat Jun 22 15:05:25 2019
 """
 arr=[1,4,4,4,5,3]
 def migratoryBirds(arr):
-    freq={}
-    for i in arr:
-        if i in freq:
-            freq[i]+=1
-        else:
-            freq[i]=1
-    print(freq[4])
+    a=[0]*len(arr)
+    for i in range(len(arr)):
+        a[arr[i]] += 1
+    print( a.index(max(a)))
+        
+        
                 
                
            
