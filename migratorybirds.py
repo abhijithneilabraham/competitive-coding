@@ -7,22 +7,18 @@ Created on Sat Jun 22 15:05:25 2019
 """
 arr=[6,6,6,4,6,3]
 def migratoryBirds(arr):
- 
+    a=[0]*len(arr)
     freq={}
     for i in arr:
         if i in freq:
             freq[i]+=1
-            
+            a.insert(i,freq[i])
         else:
             freq[i]=1
-           
-    print(max(freq))
-    for key,values in freq.items():
-        
-        if values==max(freq):
-            
-            print(key)
-            return key
+            a.insert(i,freq[i])
+       for key,values in freq.items:
+           if key==max(a):
+               print(key)
             
         
         
