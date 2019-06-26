@@ -1,25 +1,26 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Sat Jun 22 15:05:25 2019
-
-@author: abhijithneilabraham
-"""
-arr=[6,6,6,4,6,3]
+arr=[6,6,6,4,4,4,6,4,4,4]
 def migratoryBirds(arr):
-    a=[0]*len(arr)
-    freq={}
-    for i in arr:
-        if i in freq:
-            freq[i]+=1
-            a.insert(i,freq[i])
+    count=1
+    maxd=1
+    b=arr[0]
+    a=sorted(arr)
+    for i in range(len(arr)):
+        if arr[i-1]==arr[i]:
+            count+=1
         else:
-            freq[i]=1
-            a.insert(i,freq[i])
-       for key,values in freq.items:
-           if key==max(a):
-               print(key)
-            
+            if count>maxd:
+                maxd=count
+                b=arr[i-1]            
+            count=1
+        if count>maxd:
+            maxd=count
+            b=arr[len(arr)-1]
+        
+        print(b)
+        return b
+    
+                
+        
         
         
                 
@@ -28,4 +29,3 @@ def migratoryBirds(arr):
        
        
 migratoryBirds(arr)
-            
