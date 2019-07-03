@@ -5,6 +5,17 @@ Created on Wed Jul  3 15:22:28 2019
 
 @author: abhijithneilabraham
 """
+'''
+8
+2
+2
+3
+2
+2
+34
+13
+34
+'''
 def solve(i):
     def fib(n):
         m=1
@@ -20,8 +31,9 @@ def solve(i):
     for j in range(i):
         if i==fib(j):
             flag='IsFibo'
+            break
             
     return flag
-print(solve(10))
+print(solve(34))
 
              
