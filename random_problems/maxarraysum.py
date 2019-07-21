@@ -6,7 +6,7 @@ Created on Sun Jul 21 19:04:58 2019
 @author: abhijithneilabraham
 """
 
-a=[-1,2,4,-3,5,2,-5,2]
+a=[-13, -3, -25, -20, -3, -16, -23, -12, -5, -22, -15, -4, -7]
 def maxSubsetSum(a):
     maxsum=0
     c=[]
@@ -26,6 +26,7 @@ def maxSubsetSum(a):
     print(sum3)
     return sum3
 maxSubsetSum(a)
+#I guess this one went wrong
         
         
         
