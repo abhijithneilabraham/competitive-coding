@@ -20,6 +20,7 @@ def hourglassSum(arr):
         
             s.append(sum1)
     print(max(s))
+    return max(s)
 hourglassSum(arr)
         
         
