@@ -1,0 +1,4 @@
+/Users/abhijithneilabraham/Documents/GitHub/Hackerrank-/arrays/rotateleft.cpp:10:19: error: member reference base type 'int' is not a structure or union
+  int size=arr2[0].length();
+           ~~~~~~~^~~~~~~
+1 error generated.
