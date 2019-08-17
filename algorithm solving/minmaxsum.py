@@ -15,5 +15,6 @@ def miniMaxSum(arr):
             s+=b[i]
         if i!=len(b)-1:
             mini+=b[i]
-    print(s,mini)
+    print(mini,s)
+    
 miniMaxSum(a)

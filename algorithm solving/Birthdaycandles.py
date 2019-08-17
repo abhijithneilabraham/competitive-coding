@@ -18,29 +18,22 @@ import os
 import random
 import re
 import sys
-
+a=[3,2,1,3]
 # Complete the birthdayCakeCandles function below.
 def birthdayCakeCandles(ar):
-    j=0
-    
-    for k in range(len(ar)):
-        if max(ar) ==ar[k]:
-            j+=1
-    return j
-        
+    b=sorted(ar)
+    m=max(b)
+    c=0
+    for i in b:
+        if i==m:
+            c+=1
+    print(c)
+    return c
+
+birthdayCakeCandles(a)        
             
         
 
-if __name__ == '__main__':
-    
 
-    ar_count = int(input())
-
-    ar = list(map(int, input().rstrip().split()))
-    
-
-    result = birthdayCakeCandles(ar)
-
-    print(result)
 
 
