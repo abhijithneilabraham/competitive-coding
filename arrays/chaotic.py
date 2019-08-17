@@ -17,13 +17,12 @@ def minimumBribes(a):
         if a[i]-b[i] and a[i]-b[i+1]  >2:
             print("Too Chaotic")
         else:
-            if a[i]!=b[i]:
-                if a.index(5)+1>b[i]:
-                    count+=a[i]-b[i]
+            if (a[i])>b[i]:
+                count+=(a[i]-b[i])
                 
                 
         i+=1
-    print(count)
+    print(count+1)
             
 minimumBribes(a)
     
