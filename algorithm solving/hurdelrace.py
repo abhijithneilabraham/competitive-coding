@@ -14,5 +14,5 @@ def hurdleRace(k, height):
     else:
         print(m-k)
         return m-k
-hurdleRace(4,ht)
+hurdleRace(4,htc)
         
