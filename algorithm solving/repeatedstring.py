@@ -14,5 +14,6 @@ def repeatedString(s, n):
         if s[i]=="a":
             ct+=1
     print(ct)
+    return ct
     
 repeatedString(a,10)
