@@ -10,8 +10,6 @@ b=679262176
 c=5284458
 def saveThePrisoner(n, m, s):
 	l = (s - 1 + m) % n
-	# Cannot be 0, this is 1-base
-	# Could go with another modulo difference
 	if l == 0:
 		l = n
 	print(l)
