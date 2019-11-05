@@ -13,6 +13,7 @@ def permutationEquation(p):
         if i+1 in p:
             c.append(p.index(p.index(i+1)+1)+1)
     print(c)
+    return c
         
 permutationEquation(p)
         
