@@ -9,13 +9,15 @@ Created on Wed Jan  1 01:54:12 2020
 def checkMagazine(magazine, note):
     d={}
     for i in magazine:
-        d[i]=0
+        d.setdefault(i,1)
     for i in note:
-        d[i]-=1
-    for i in magazine:
-        d[i]+=1
+        if i in d:
+            d[i]-=1
+        else:
+            print("No")
+            return
     for i in d:
-        if d[i]<1 or i not in magazine:
+        if d[i]<0:
             print("No")
             return
     print("Yes")
