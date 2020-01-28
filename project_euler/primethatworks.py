@@ -14,13 +14,16 @@ def sieveoferatosthenes(n):
         if prime[p]:
             for i in range(p*p,half,p):
                 prime[i]=False
+
+
         p+=1
+    l=n
     for i in range(2,half):
         if prime[i] and n%i==0:
             l=i
     return l
-        
+#        
         
                 
-print(sieveoferatosthenes(600851475143))
+print(sieveoferatosthenes(33))
     
