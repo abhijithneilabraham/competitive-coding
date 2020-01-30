@@ -25,5 +25,5 @@ def sieveoferatosthenes(n):
 #        
         
                 
-print(sieveoferatosthenes(33))
+print(sieveoferatosthenes(121))
     
