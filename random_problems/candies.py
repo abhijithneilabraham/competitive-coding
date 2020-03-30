@@ -6,14 +6,6 @@ Created on Mon Mar 30 20:44:42 2020
 @author: abhijithneilabraham
 """
 a=[2,4,2,6,1,7,8,9,2,1]
-f=open('testcasecandies.txt','r')
-x=f.readlines()
-y=[]
-
-
-for i in range(len(x)):
-    y.append(x[i])
-
 def candies(n, arr):
     candy_lr = [1]*(len(arr))
     candy_rl = [1]*(len(arr))
@@ -48,7 +40,7 @@ def candies(n, arr):
     
     for i in range(n-2,-1,-1):
         if arr[i+1]<arr[i]:
-            cr[i]=cl[i+1]+1
+            cr[i]=cr[i+1]+1
     #for i in range(n):
     for i in range(n):
         s+=max(cl[i],cr[i])
