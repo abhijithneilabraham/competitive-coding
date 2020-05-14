@@ -29,4 +29,7 @@ for i,j in zip(l,m):
             j[k]+=1
 print(c,d,f)
         
-        
+import pandas as pd       
+n=pd.DataFrame(columns=['aa'])
+from statistics import mean
+print(mean(a))
